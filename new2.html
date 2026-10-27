@@ -11,14 +11,17 @@
       padding: 0;
       box-sizing: border-box;
     }
-
+ 
     :root {
       /* спокойная деловая палитра: синие, белые, серые тона */
-      --color-primary: #1e3a5f; /* глубокий синий */
+      --color-primary: #1e3a5f;
+      /* глубокий синий */
       --color-primary-light: #2b4b72;
-      --color-accent: #3b6ea5; /* мягкий синий для ссылок/кнопок */
+      --color-accent: #3b6ea5;
+      /* мягкий синий для ссылок/кнопок */
       --color-accent-hover: #2a5380;
-      --color-bg-light: #f8fafc; /* почти белый с серым отливом */
+      --color-bg-light: #f8fafc;
+      /* почти белый с серым отливом */
       --color-bg-white: #ffffff;
       --color-gray-100: #f1f5f9;
       --color-gray-200: #e2e8f0;
@@ -32,11 +35,11 @@
       --radius-btn: 40px;
       --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     }
-
+ 
     html {
       scroll-behavior: smooth;
     }
-
+ 
     body {
       font-family: var(--font-sans);
       background-color: var(--color-bg-light);
@@ -45,66 +48,66 @@
       -webkit-font-smoothing: antialiased;
       padding-top: 70px; /* отступ под фиксированный хедер */
     }
-
+ 
     /* ---------- Типографика и общие элементы ---------- */
     h1, h2, h3 {
       font-weight: 600;
       line-height: 1.2;
       color: var(--color-primary);
     }
-
+ 
     h1 {
       font-size: clamp(2rem, 5vw, 3.25rem);
       letter-spacing: -0.02em;
     }
-
+ 
     h2 {
       font-size: clamp(1.75rem, 4vw, 2.5rem);
       letter-spacing: -0.01em;
       margin-bottom: 1rem;
     }
-
+ 
     h3 {
       font-size: 1.35rem;
       margin-bottom: 0.5rem;
     }
-
+ 
     a {
       color: var(--color-accent);
       text-decoration: none;
       transition: color 0.2s;
     }
-
+ 
     a:hover {
       color: var(--color-accent-hover);
     }
-
+ 
     .container {
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 1.5rem;
     }
-
+ 
     .section {
       padding: 4rem 0;
     }
-
+ 
     .section-title {
       text-align: center;
       margin-bottom: 2.5rem;
     }
-
+ 
     .section-title h2 {
       margin-bottom: 0.5rem;
     }
-
+ 
     .section-title p {
       color: var(--color-gray-600);
       font-size: 1.125rem;
       max-width: 600px;
       margin: 0 auto;
     }
-
+ 
     /* ---------- Кнопки ---------- */
     .btn {
       display: inline-block;
@@ -122,34 +125,34 @@
       line-height: 1.4;
       border: 1px solid transparent;
     }
-
+ 
     .btn:hover {
       background-color: var(--color-accent-hover);
       color: white;
       box-shadow: var(--shadow-md);
     }
-
+ 
     .btn:active {
       transform: scale(0.98);
     }
-
+ 
     .btn-outline {
       background-color: transparent;
       border: 1px solid var(--color-accent);
       color: var(--color-accent);
       box-shadow: none;
     }
-
+ 
     .btn-outline:hover {
       background-color: var(--color-accent);
       color: white;
     }
-
+ 
     .btn-large {
       padding: 1rem 2.5rem;
       font-size: 1.125rem;
     }
-
+ 
     /* ---------- Header ---------- */
     .header {
       position: fixed;
@@ -163,7 +166,7 @@
       z-index: 1000;
       border-bottom: 1px solid var(--color-gray-200);
     }
-
+ 
     .header__inner {
       display: flex;
       align-items: center;
@@ -173,7 +176,7 @@
       max-width: 1200px;
       margin: 0 auto;
     }
-
+ 
     .logo {
       font-size: 1.6rem;
       font-weight: 700;
@@ -183,24 +186,24 @@
       align-items: center;
       gap: 0.5rem;
     }
-
+ 
     .logo span {
       color: var(--color-accent);
     }
-
+ 
     /* навигация — десктоп */
     .nav {
       display: flex;
       align-items: center;
       gap: 2rem;
     }
-
+ 
     .nav__list {
       display: flex;
       list-style: none;
       gap: 1.8rem;
     }
-
+ 
     .nav__link {
       font-size: 0.95rem;
       font-weight: 500;
@@ -208,17 +211,17 @@
       transition: color 0.2s;
       white-space: nowrap;
     }
-
+ 
     .nav__link:hover {
       color: var(--color-accent);
     }
-
+ 
     .header__cta {
       margin-left: 1rem;
       padding: 0.6rem 1.5rem;
       font-size: 0.95rem;
     }
-
+ 
     /* мобильное меню — кнопка-бургер */
     .burger {
       display: none;
@@ -230,7 +233,7 @@
       gap: 5px;
       border-radius: 8px;
     }
-
+ 
     .burger span {
       display: block;
       width: 26px;
@@ -239,25 +242,25 @@
       border-radius: 4px;
       transition: 0.2s;
     }
-
+ 
     /* ---------- Hero ---------- */
     .hero {
       padding: 3rem 0 4rem;
       background: linear-gradient(145deg, #ffffff 0%, #f0f5fb 100%);
       border-bottom: 1px solid var(--color-gray-200);
     }
-
+ 
     .hero__grid {
       display: grid;
       grid-template-columns: 1fr 0.9fr;
       align-items: center;
       gap: 2.5rem;
     }
-
+ 
     .hero__content {
       max-width: 600px;
     }
-
+ 
     .hero__label {
       display: inline-block;
       background-color: var(--color-gray-100);
@@ -270,57 +273,57 @@
       letter-spacing: 0.3px;
       border: 1px solid var(--color-gray-200);
     }
-
+ 
     .hero__title {
       margin-bottom: 1.25rem;
     }
-
+ 
     .hero__title-accent {
       color: var(--color-accent);
     }
-
+ 
     .hero__text {
       font-size: 1.125rem;
       color: var(--color-gray-700);
       margin-bottom: 2rem;
       max-width: 500px;
     }
-
+ 
     .hero__actions {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
     }
-
+ 
     .hero__stats {
       display: flex;
       gap: 2rem;
       margin-top: 2.5rem;
     }
-
+ 
     .stat-item {
       display: flex;
       flex-direction: column;
     }
-
+ 
     .stat-number {
       font-size: 1.8rem;
       font-weight: 700;
       color: var(--color-primary);
       line-height: 1.2;
     }
-
+ 
     .stat-label {
       font-size: 0.9rem;
       color: var(--color-gray-600);
     }
-
+ 
     .hero__image {
       display: flex;
       justify-content: center;
       align-items: center;
     }
-
+ 
     .hero__image-placeholder {
       width: 100%;
       aspect-ratio: 4 / 3;
@@ -337,19 +340,19 @@
       text-align: center;
       border: 1px solid rgba(255, 255, 255, 0.5);
     }
-
+ 
     /* ---------- О центре ---------- */
     .about {
       background-color: var(--color-bg-white);
     }
-
+ 
     .about__grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 2rem;
       margin-top: 1rem;
     }
-
+ 
     .about-card {
       background-color: var(--color-bg-light);
       border-radius: var(--radius-card);
@@ -358,13 +361,13 @@
       border: 1px solid var(--color-gray-200);
       box-shadow: var(--shadow-sm);
     }
-
+ 
     .about-card:hover {
       transform: translateY(-4px);
       box-shadow: var(--shadow-md);
       border-color: var(--color-gray-300);
     }
-
+ 
     .about-card__icon {
       font-size: 2rem;
       margin-bottom: 1.2rem;
@@ -377,28 +380,28 @@
       border-radius: 14px;
       color: var(--color-primary);
     }
-
+ 
     .about-card h3 {
       font-size: 1.25rem;
       margin-bottom: 0.75rem;
     }
-
+ 
     .about-card p {
       color: var(--color-gray-600);
       font-size: 0.98rem;
     }
-
+ 
     /* ---------- Направления подготовки ---------- */
     .directions {
       background-color: var(--color-bg-light);
     }
-
+ 
     .directions__grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1.8rem;
     }
-
+ 
     .direction-card {
       background-color: white;
       border-radius: var(--radius-card);
@@ -409,12 +412,12 @@
       display: flex;
       flex-direction: column;
     }
-
+ 
     .direction-card:hover {
       box-shadow: var(--shadow-md);
       border-color: var(--color-accent);
     }
-
+ 
     .direction-card__badge {
       display: inline-block;
       background-color: #e9f0f8;
@@ -427,37 +430,37 @@
       align-self: flex-start;
       letter-spacing: 0.3px;
     }
-
+ 
     .direction-card h3 {
       font-size: 1.3rem;
       margin-bottom: 0.75rem;
     }
-
+ 
     .direction-card p {
       color: var(--color-gray-600);
       font-size: 0.95rem;
       margin-bottom: 1.5rem;
       flex-grow: 1;
     }
-
+ 
     .direction-card .price {
       font-weight: 600;
       color: var(--color-primary);
       font-size: 1.1rem;
     }
-
+ 
     /* ---------- Преподаватели ---------- */
     .teachers {
       background-color: white;
     }
-
+ 
     .teachers__grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 2rem;
       margin-top: 1rem;
     }
-
+ 
     .teacher-card {
       background-color: var(--color-bg-light);
       border-radius: var(--radius-card);
@@ -466,12 +469,12 @@
       border: 1px solid var(--color-gray-200);
       transition: transform 0.2s;
     }
-
+ 
     .teacher-card:hover {
       transform: translateY(-4px);
       border-color: var(--color-accent);
     }
-
+ 
     .teacher-avatar {
       width: 110px;
       height: 110px;
@@ -487,35 +490,35 @@
       border: 3px solid white;
       box-shadow: var(--shadow-sm);
     }
-
+ 
     .teacher-card h3 {
       font-size: 1.2rem;
       margin-bottom: 0.3rem;
     }
-
+ 
     .teacher-subject {
       font-size: 0.9rem;
       color: var(--color-accent);
       font-weight: 500;
       margin-bottom: 0.6rem;
     }
-
+ 
     .teacher-desc {
       font-size: 0.9rem;
       color: var(--color-gray-600);
     }
-
+ 
     /* ---------- Отзывы ---------- */
     .reviews {
       background-color: var(--color-bg-light);
     }
-
+ 
     .reviews__grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2rem;
     }
-
+ 
     .review-card {
       background-color: white;
       border-radius: var(--radius-card);
@@ -525,7 +528,7 @@
       display: flex;
       flex-direction: column;
     }
-
+ 
     .review-text {
       font-size: 1rem;
       color: var(--color-gray-700);
@@ -534,13 +537,13 @@
       line-height: 1.6;
       flex-grow: 1;
     }
-
+ 
     .review-author {
       display: flex;
       align-items: center;
       gap: 1rem;
     }
-
+ 
     .review-avatar {
       width: 48px;
       height: 48px;
@@ -553,25 +556,25 @@
       color: var(--color-primary);
       font-size: 1rem;
     }
-
+ 
     .review-info strong {
       display: block;
       font-size: 0.95rem;
       color: var(--color-gray-900);
     }
-
+ 
     .review-info span {
       font-size: 0.85rem;
       color: var(--color-gray-600);
     }
-
+ 
     /* ---------- Форма записи ---------- */
     .form-section {
       background: linear-gradient(135deg, #ffffff 0%, #eef4fa 100%);
       border-top: 1px solid var(--color-gray-200);
       border-bottom: 1px solid var(--color-gray-200);
     }
-
+ 
     .form-container {
       max-width: 700px;
       margin: 0 auto;
@@ -581,23 +584,23 @@
       box-shadow: var(--shadow-md);
       border: 1px solid var(--color-gray-200);
     }
-
+ 
     .form-container h2 {
       text-align: center;
       margin-bottom: 0.5rem;
     }
-
+ 
     .form-subtitle {
       text-align: center;
       color: var(--color-gray-600);
       margin-bottom: 2rem;
       font-size: 1rem;
     }
-
+ 
     .form-group {
       margin-bottom: 1.5rem;
     }
-
+ 
     .form-group label {
       display: block;
       font-weight: 500;
@@ -605,7 +608,7 @@
       color: var(--color-gray-700);
       font-size: 0.95rem;
     }
-
+ 
     .form-group input,
     .form-group select,
     .form-group textarea {
@@ -619,7 +622,7 @@
       transition: border-color 0.2s, box-shadow 0.2s;
       color: var(--color-gray-900);
     }
-
+ 
     .form-group input:focus,
     .form-group select:focus,
     .form-group textarea:focus {
@@ -627,12 +630,12 @@
       border-color: var(--color-accent);
       box-shadow: 0 0 0 4px rgba(59, 110, 165, 0.1);
     }
-
+ 
     .form-group textarea {
       resize: vertical;
       min-height: 100px;
     }
-
+ 
     .form-group select {
       appearance: none;
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23475569' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
@@ -641,32 +644,32 @@
       background-size: 1.2rem;
       cursor: pointer;
     }
-
+ 
     .form-row {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1.2rem;
     }
-
+ 
     .form-footer {
       display: flex;
       flex-direction: column;
       gap: 1rem;
       margin-top: 1.8rem;
     }
-
+ 
     .form-footer .btn {
       width: 100%;
       padding: 1rem;
       font-size: 1.05rem;
     }
-
+ 
     .form-note {
       font-size: 0.85rem;
       color: var(--color-gray-600);
       text-align: center;
     }
-
+ 
     .form-message {
       margin-top: 1rem;
       padding: 1rem;
@@ -675,75 +678,75 @@
       font-weight: 500;
       display: none;
     }
-
+ 
     .form-message.success {
       background-color: #e3f0e8;
       color: #1e5a3c;
       border: 1px solid #b8d9c5;
       display: block;
     }
-
+ 
     .form-message.error {
       background-color: #fbeaea;
       color: #9b2c2c;
       border: 1px solid #f0c0c0;
       display: block;
     }
-
+ 
     /* ---------- Footer ---------- */
     .footer {
       background-color: var(--color-primary);
       color: white;
       padding: 3rem 0 2rem;
     }
-
+ 
     .footer__grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 2rem;
       margin-bottom: 2rem;
     }
-
+ 
     .footer__brand .logo {
       color: white;
       font-size: 1.8rem;
       margin-bottom: 1rem;
     }
-
+ 
     .footer__brand .logo span {
       color: #9bb9db;
     }
-
+ 
     .footer__brand p {
       color: #cbd5e1;
       font-size: 0.95rem;
       max-width: 250px;
     }
-
+ 
     .footer h4 {
       font-size: 1.1rem;
       margin-bottom: 1.2rem;
       color: white;
       font-weight: 600;
     }
-
+ 
     .footer ul {
       list-style: none;
     }
-
+ 
     .footer ul li {
       margin-bottom: 0.6rem;
     }
-
+ 
     .footer ul a {
       color: #cbd5e1;
       font-size: 0.95rem;
     }
-
+ 
     .footer ul a:hover {
       color: white;
     }
-
+ 
     .footer__contact-item {
       color: #cbd5e1;
       font-size: 0.95rem;
@@ -752,7 +755,7 @@
       align-items: center;
       gap: 0.5rem;
     }
-
+ 
     .footer__bottom {
       border-top: 1px solid rgba(255, 255, 255, 0.15);
       padding-top: 1.5rem;
@@ -760,48 +763,48 @@
       font-size: 0.9rem;
       color: #94a3b8;
     }
-
+ 
     /* ---------- Адаптивность ---------- */
     @media (max-width: 1024px) {
       .hero__grid {
         grid-template-columns: 1fr;
         text-align: center;
       }
-
+ 
       .hero__content {
         max-width: 100%;
       }
-
+ 
       .hero__text {
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
       }
-
+ 
       .hero__actions {
         justify-content: center;
       }
-
+ 
       .hero__stats {
         justify-content: center;
       }
-
+ 
       .hero__image-placeholder {
         max-width: 500px;
         margin: 0 auto;
       }
     }
-
+ 
     @media (max-width: 768px) {
       body {
         padding-top: 64px;
       }
-
+ 
       .header__inner {
         height: 64px;
         padding: 0 1rem;
       }
-
+ 
       .nav {
         display: none;
         position: fixed;
@@ -817,94 +820,94 @@
         align-items: stretch;
         z-index: 999;
       }
-
+ 
       .nav.active {
         display: flex;
       }
-
+ 
       .nav__list {
         flex-direction: column;
         gap: 1rem;
       }
-
+ 
       .nav__link {
         font-size: 1.1rem;
         display: block;
         padding: 0.4rem 0;
       }
-
+ 
       .header__cta {
         margin-left: 0;
         text-align: center;
       }
-
+ 
       .burger {
         display: flex;
       }
-
+ 
       .hero {
         padding: 2rem 0 3rem;
       }
-
+ 
       .hero__stats {
         flex-wrap: wrap;
         gap: 1.5rem;
         justify-content: center;
       }
-
+ 
       .form-row {
         grid-template-columns: 1fr;
         gap: 0;
       }
-
+ 
       .form-container {
         padding: 1.8rem 1.2rem;
       }
-
+ 
       .section {
         padding: 3rem 0;
       }
-
+ 
       .footer__grid {
         grid-template-columns: 1fr;
         text-align: center;
       }
-
+ 
       .footer__brand p {
         max-width: 100%;
       }
-
+ 
       .footer__contact-item {
         justify-content: center;
       }
     }
-
+ 
     @media (max-width: 480px) {
       .hero__actions {
         flex-direction: column;
         align-items: stretch;
       }
-
+ 
       .btn-large {
         width: 100%;
       }
-
+ 
       .about-card {
         padding: 1.5rem;
       }
-
+ 
       .stat-number {
         font-size: 1.5rem;
       }
     }
-
+ 
     /* ---------- Доступность: фокус ---------- */
     :focus-visible {
       outline: 3px solid var(--color-accent);
       outline-offset: 3px;
       border-radius: 4px;
     }
-
+ 
     /* скрытый заголовок для доступности */
     .visually-hidden {
       position: absolute;
@@ -919,16 +922,16 @@
   </style>
 </head>
 <body>
-
+ 
   <!-- ========== HEADER ========== -->
   <header class="header">
     <div class="header__inner">
       <a href="#" class="logo" aria-label="Логос — на главную">Л<span>о</span>гос</a>
-
+ 
       <button class="burger" id="burgerBtn" aria-label="Открыть меню" aria-expanded="false" aria-controls="mainNav">
         <span></span><span></span><span></span>
       </button>
-
+ 
       <nav class="nav" id="mainNav" aria-label="Основная навигация">
         <ul class="nav__list">
           <li><a href="#about" class="nav__link">О центре</a></li>
@@ -941,7 +944,7 @@
       </nav>
     </div>
   </header>
-
+ 
   <main>
     <!-- ========== HERO ========== -->
     <section class="hero" id="hero">
@@ -975,14 +978,15 @@
             </div>
           </div>
           <div class="hero__image">
-            <div class="hero__image-placeholder" role="img" aria-label="Иллюстрация: ученик и преподаватель за работой">
-              📚 Учим думать, а не запоминать
+            <!-- ИЗМЕНЕНИЕ: Добавлена картинка учеников вместо заглушки -->
+            <div style="text-align: center; margin: 20px 0; width: 100%;">
+                <img src="students.jpg" alt="Ученики" style="max-width: 100%; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
             </div>
           </div>
         </div>
       </div>
     </section>
-
+ 
     <!-- ========== О ЦЕНТРЕ ========== -->
     <section class="section about" id="about">
       <div class="container">
@@ -990,6 +994,12 @@
           <h2>Почему «Логос»</h2>
           <p>Мы создаём спокойную и продуктивную атмосферу, в которой знания усваиваются естественно</p>
         </div>
+        
+        <!-- ИЗМЕНЕНИЕ: Добавлена картинка класса -->
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="classroom.jpg" alt="Наш класс" style="max-width: 100%; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+        </div>
+
         <div class="about__grid">
           <article class="about-card">
             <div class="about-card__icon" aria-hidden="true">🎯</div>
@@ -1009,7 +1019,7 @@
         </div>
       </div>
     </section>
-
+ 
     <!-- ========== НАПРАВЛЕНИЯ ========== -->
     <section class="section directions" id="directions">
       <div class="container">
@@ -1057,7 +1067,7 @@
         </div>
       </div>
     </section>
-
+ 
     <!-- ========== ПРЕПОДАВАТЕЛИ ========== -->
     <section class="section teachers" id="teachers">
       <div class="container">
@@ -1065,6 +1075,12 @@
           <h2>Наши преподаватели</h2>
           <p>Педагоги с профильным образованием и опытом работы в школе и на экзаменах</p>
         </div>
+
+        <!-- ИЗМЕНЕНИЕ: Добавлена картинка преподавателя -->
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="teacher.jpg" alt="Преподаватель" style="max-width: 100%; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+        </div>
+
         <div class="teachers__grid">
           <article class="teacher-card">
             <div class="teacher-avatar" aria-hidden="true">ЕК</div>
@@ -1093,7 +1109,7 @@
         </div>
       </div>
     </section>
-
+ 
     <!-- ========== ОТЗЫВЫ ========== -->
     <section class="section reviews" id="reviews">
       <div class="container">
@@ -1135,20 +1151,20 @@
         </div>
       </div>
     </section>
-
+ 
     <!-- ========== ФОРМА ЗАПИСИ ========== -->
     <section class="section form-section" id="form">
       <div class="container">
         <div class="form-container">
           <h2>Записаться на пробное занятие</h2>
           <p class="form-subtitle">Оставьте заявку — мы свяжемся, уточним детали и подберём удобное время</p>
-
+ 
           <form id="bookingForm" novalidate>
             <div class="form-group">
               <label for="name">Ваше имя *</label>
               <input type="text" id="name" name="name" placeholder="Как к вам обращаться" required autocomplete="name">
             </div>
-
+ 
             <div class="form-row">
               <div class="form-group">
                 <label for="phone">Телефон *</label>
@@ -1159,7 +1175,7 @@
                 <input type="email" id="email" name="email" placeholder="example@mail.ru" autocomplete="email">
               </div>
             </div>
-
+ 
             <div class="form-group">
               <label for="subject">Направление подготовки *</label>
               <select id="subject" name="subject" required>
@@ -1174,12 +1190,12 @@
                 <option value="history">История</option>
               </select>
             </div>
-
+ 
             <div class="form-group">
               <label for="message">Комментарий или вопрос</label>
               <textarea id="message" name="message" placeholder="Например: нужна подготовка к ЕГЭ, 11 класс, дистанционно"></textarea>
             </div>
-
+ 
             <div class="form-footer">
               <button type="submit" class="btn btn-large">Отправить заявку</button>
               <p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
@@ -1190,7 +1206,7 @@
       </div>
     </section>
   </main>
-
+ 
   <!-- ========== FOOTER ========== -->
   <footer class="footer">
     <div class="container">
@@ -1199,7 +1215,7 @@
           <div class="logo">Л<span>о</span>гос</div>
           <p>Репетиторский центр в Санкт-Петербурге. Помогаем школьникам сдать экзамены уверенно и спокойно.</p>
         </div>
-
+ 
         <div>
           <h4>Навигация</h4>
           <ul>
@@ -1210,7 +1226,7 @@
             <li><a href="#form">Записаться</a></li>
           </ul>
         </div>
-
+ 
         <div>
           <h4>Контакты</h4>
           <div class="footer__contact-item">📍 Санкт-Петербург, ул. Просвещения, 24</div>
@@ -1219,29 +1235,29 @@
           <div class="footer__contact-item">🕒 Ежедневно 10:00–20:00</div>
         </div>
       </div>
-
+ 
       <div class="footer__bottom">
         © 2025 Репетиторский центр «Логос». Все права защищены.
       </div>
     </div>
   </footer>
-
+ 
   <!-- ========== JAVASCRIPT ========== -->
   <script>
     (function() {
       'use strict';
-
+ 
       // ---------- Мобильное меню ----------
       const burger = document.getElementById('burgerBtn');
       const nav = document.getElementById('mainNav');
-
+ 
       if (burger && nav) {
         burger.addEventListener('click', function() {
           const isExpanded = burger.getAttribute('aria-expanded') === 'true';
           nav.classList.toggle('active');
           burger.setAttribute('aria-expanded', !isExpanded);
         });
-
+ 
         // Закрываем меню при клике по ссылке (на мобильных)
         nav.querySelectorAll('a').forEach(link => {
           link.addEventListener('click', () => {
@@ -1251,7 +1267,7 @@
             }
           });
         });
-
+ 
         // Закрываем меню при клике вне его области (опционально)
         document.addEventListener('click', (e) => {
           if (window.innerWidth <= 768 && nav.classList.contains('active')) {
@@ -1262,20 +1278,20 @@
           }
         });
       }
-
+ 
       // ---------- Плавная прокрутка для якорей (с учётом фиксированного хедера) ----------
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
           const href = this.getAttribute('href');
           if (href === '#') return;
-
+ 
           const targetElement = document.querySelector(href);
           if (targetElement) {
             e.preventDefault();
             const headerHeight = document.querySelector('.header')?.offsetHeight || 70;
             const elementPosition = targetElement.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
-
+ 
             window.scrollTo({
               top: offsetPosition,
               behavior: 'smooth'
@@ -1283,26 +1299,26 @@
           }
         });
       });
-
+ 
       // ---------- Обработка формы ----------
       const form = document.getElementById('bookingForm');
       const formMessage = document.getElementById('formMessage');
-
+ 
       if (form) {
         form.addEventListener('submit', function(e) {
           e.preventDefault();
-
+ 
           // Сброс предыдущих сообщений
           formMessage.classList.remove('success', 'error');
           formMessage.textContent = '';
-
+ 
           // Получаем значения полей
           const name = document.getElementById('name').value.trim();
           const phone = document.getElementById('phone').value.trim();
           const email = document.getElementById('email').value.trim();
           const subject = document.getElementById('subject').value;
           const message = document.getElementById('message').value.trim();
-
+ 
           // Простая валидация
           if (!name) {
             formMessage.textContent = 'Пожалуйста, укажите ваше имя.';
@@ -1310,14 +1326,14 @@
             document.getElementById('name').focus();
             return;
           }
-
+ 
           if (!phone) {
             formMessage.textContent = 'Пожалуйста, укажите номер телефона.';
             formMessage.classList.add('error');
             document.getElementById('phone').focus();
             return;
           }
-
+ 
           // Проверка телефона: хотя бы 10 цифр
           const digits = phone.replace(/\D/g, '');
           if (digits.length < 10) {
@@ -1326,14 +1342,14 @@
             document.getElementById('phone').focus();
             return;
           }
-
+ 
           if (!subject) {
             formMessage.textContent = 'Пожалуйста, выберите направление подготовки.';
             formMessage.classList.add('error');
             document.getElementById('subject').focus();
             return;
           }
-
+ 
           // Проверка email, если он заполнен
           if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
             formMessage.textContent = 'Введите корректный email или оставьте поле пустым.';
@@ -1341,24 +1357,24 @@
             document.getElementById('email').focus();
             return;
           }
-
+ 
           // Имитация успешной отправки
           formMessage.textContent = 'Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.';
           formMessage.classList.add('success');
-
+ 
           // Очистка формы (опционально)
           form.reset();
-
+ 
           // Фокус на сообщение для доступности
           formMessage.focus();
-
+ 
           // Автоскрытие сообщения через 7 секунд
           setTimeout(() => {
             formMessage.classList.remove('success', 'error');
             formMessage.textContent = '';
           }, 7000);
         });
-
+ 
         // Валидация телефона в реальном времени — подсветка при корректном вводе (дружелюбный UX)
         const phoneInput = document.getElementById('phone');
         if (phoneInput) {
@@ -1372,15 +1388,15 @@
           });
         }
       }
-
+ 
       // ---------- Активная ссылка при скролле (небольшой UX-бонус) ----------
       const sections = document.querySelectorAll('section[id]');
       const navLinks = document.querySelectorAll('.nav__link');
-
+ 
       function updateActiveLink() {
         let current = '';
         const scrollPosition = window.scrollY + 120;
-
+ 
         sections.forEach(section => {
           const sectionTop = section.offsetTop;
           const sectionHeight = section.offsetHeight;
@@ -1388,7 +1404,7 @@
             current = section.getAttribute('id');
           }
         });
-
+ 
         navLinks.forEach(link => {
           link.style.color = '';
           link.style.fontWeight = '';
@@ -1398,7 +1414,7 @@
           }
         });
       }
-
+ 
       window.addEventListener('scroll', updateActiveLink);
       window.addEventListener('load', updateActiveLink);
     })();
